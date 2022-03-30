@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+	.header {
+		&_logo  {
+			width: 650px;
+		}
+		&__official {
+			display: none;
+		}
+	}
+}
+@media (max-width: 576px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+		&__phone {
+			margin-top: 14px;
+		}
+	}
+}

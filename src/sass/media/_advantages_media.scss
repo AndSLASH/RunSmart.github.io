@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+	.advantages {
+		min-height: 370px;
+		padding: 53px 15px 65px;
+		&__wrapper {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
