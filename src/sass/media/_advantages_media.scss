@@ -9,5 +9,13 @@
 			justify-content: center;
 			align-items: center;
 		}
+		&__item {
+		&:nth-child(2) {
+			margin-top: 20px;
+		}
+		&:nth-child(3) {
+			margin-top: 20px;
+		}
+		}
 	}
 }

@@ -3,6 +3,7 @@
 }
 .container {
 	max-width: 950px;
+	min-width: 290px;
 	margin: 0 auto;
 }
 @import 'base/variables';
@@ -11,5 +12,7 @@
 @import 'bloks/header';
 @import 'bloks/buttons';
 @import 'bloks/titles';
+@import 'bloks/forms';
 @import 'bloks/advantages';
+@import 'bloks/consultation';
 @import 'media/media';
