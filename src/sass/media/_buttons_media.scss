@@ -1,3 +1,12 @@
+@media (max-width: 991px) {
+	.button {
+		&_mini {
+			width: 95px;
+			height: 36px;
+			font-size: 14px;
+		}
+	}
+}
 @media (max-width: 575px) {
 	.button {
 		&_main {

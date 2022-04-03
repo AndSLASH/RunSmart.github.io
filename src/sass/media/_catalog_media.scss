@@ -1,0 +1,149 @@
+@media (max-width: 991px) {
+	.container {
+		max-width: 640px;
+	}
+	.catalog {
+		&__tab {
+			width: 200px;
+			height: 45px;
+			font-size: 16px;
+			line-height: 42px;
+		}
+		&__content {
+			margin-top: 50px;
+		}
+		&-item {
+			width: 200px;
+			min-height: 342px;
+			padding: 10px 10px 17px;
+			margin-bottom: 12px;
+			&:nth-child(3n+2) {
+				margin-left: 12px;
+				margin-right: 12px;
+			}
+			&__img {
+				height: 160px;
+			}
+			&__subtitle {
+				margin-top: 12px;
+				font-size: 14px;
+			}
+			&__descr {
+				margin-top: 9px;
+				font-weight: 300;
+				font-size: 12px;
+			}
+			&__link {
+				margin-top: 15px;
+				font-size: 14px;
+			}
+			&__back {
+				font-size: 14px;
+			}
+			hr {
+				margin: 15px 0 18px;
+			}
+			&__old-price {
+				font-size: 12px;
+			}
+			&__new-price {
+				font-size: 15px;
+			}
+			&__list {
+				margin-left: 18px;
+				padding-right:	18px;
+				padding-left: 15px;
+				li {
+					margin-top: 3px;
+					font-size: 12px;
+					&::before {
+						width: 3px;
+						height: 3px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.catalog {
+		padding: 0 15px 70px;
+		&__tabs {
+			margin-top: 36px;
+		}
+		&__tab {
+			width: 153px;
+			height: 46px;
+			font-size: 14px;
+			line-height: 40px;
+		}
+	}
+}	
+
+@media (max-width: 654px) {
+	.catalog {
+		padding: 0 15px 60px;
+		&__tabs {
+			margin-top: 30px;
+		}
+		&__tab {
+			width: 100px;
+			height: 40px;
+			font-size: 9px;
+			line-height: 38px;
+		}
+		&__content {
+			margin-top: 60px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		&-item {
+			width: 290px;
+			min-height: 442px;
+			padding: 20px 20px 27px;
+			margin-bottom: 20px;
+			&:nth-child(3n+2) {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+			&__img {
+				height: 200px;
+			}
+			&__subtitle {
+				margin-top: 20px;
+				font-size: 15px;
+				line-height: 25px;
+			}
+			&__descr {
+				margin-top: 16px;
+				font-size: 13px;
+				line-height: 22px;
+			}
+			&__link {
+				margin-top: 17px;
+				font-size: 14px;
+			}
+			&__back {
+				font-size: 14px;
+			}
+			hr {
+				margin: 19px 0 21px;
+			}
+			&__old-price {
+				font-size: 14px;
+			}
+			&__new-price {
+				font-size: 20px;
+			}
+			&__list {
+				margin-left: 20px;
+				padding-right: 20px;
+				padding-left: 19px;
+				li {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
