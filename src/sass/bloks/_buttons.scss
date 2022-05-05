@@ -25,4 +25,11 @@
 		height: 44px;
 		font-size: 14px;
 	}
+	&:hover {
+		background: #FFFFFF;
+		border: 1px solid $main_color;
+		color: $main_color;
+		box-shadow: 3px 3px 10px $black_color;
+		transition: 0.5s all;
+	}
 }
