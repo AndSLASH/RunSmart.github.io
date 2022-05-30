@@ -52,6 +52,37 @@ $(document).ready(function(){
 			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
 			$('.overlay, #order').fadeIn('slow');
 		});
-	});	
+	});
+	
+	function valideForms(form){
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: {
+					required: true,
+					minlength: 10
+				  },
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Введите своё имя",
+				phone: {
+					required: "Введите свой телефон",
+					minlength: jQuery.validator.format("Введте {0} символов!")
+				  },
+				email: {
+					required: "Введите свою ел. почту",
+				  	email: "Введён не корректная ел. почта!"
+				}
+			}
+		});
+	};
+
+	valideForms('#consultation-form');
+	valideForms('#consultation form');
+	valideForms('#order form');
 
  });
