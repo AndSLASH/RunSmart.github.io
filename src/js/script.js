@@ -58,10 +58,7 @@ $(document).ready(function(){
 		$(form).validate({
 			rules: {
 				name: "required",
-				phone: {
-					required: true,
-					phone: true
-				  },
+				phone: "required",
 				email: {
 					required: true,
 					email: true
@@ -84,5 +81,39 @@ $(document).ready(function(){
 
 
 	$('input[name=phone]').mask("+38 (999) 999-99-99");
+
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			 type: "POST",
+			 url: "mailer/smart.php",
+			 data: $(this).serialize()
+		}).done(function() {
+			 $(this).find("input").val("");
+			 $('#consultation, #order').fadeOut();
+			 $('.overlay, #thanks').fadeIn('slow');
+
+			 $('form').trigger('reset');
+		});
+		return false;
+  });
+
+  // Smooth scroll and pageup
+
+  $(window).scroll(function() {
+	if ($(this).scrollTop() > 1600) {
+		 $('.page-up').fadeIn();
+	} else {
+		 $('.page-up').fadeOut();
+	}
+});
+
+$("a[href=#arrow-up]").click(function(){
+	const _href = $(this).attr("href");
+	$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+	return false;
+});
+
+new WOW().init();
 
  });
