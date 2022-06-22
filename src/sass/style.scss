@@ -7,6 +7,7 @@
 	margin: 0 auto;
 }
 @import 'base/variables';
+@import 'base/animations';
 @import 'base/mixins';
 @import 'bloks/promo';
 @import 'bloks/header';
@@ -21,4 +22,5 @@
 @import 'bloks/footer';
 @import 'bloks/modals';
 @import 'bloks/pageup';
+@import 'bloks/googlemap';
 @import 'media/media';
