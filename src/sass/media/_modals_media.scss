@@ -1,0 +1,25 @@
+@media (max-width: 576px) {
+	.modal {
+		z-index: 100;
+		width: 320px;
+		height: 500px;
+		padding: 15px;
+		&__close {
+			position: absolute;
+			top: auto;
+			right: auto;
+			bottom: 12%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 55px;
+			line-height: 30px;
+			color: $main_color;
+			border: solid 4px  $main_color;
+			border-radius: 100%;
+			padding: 10px 10px 15px 10px;
+		}
+		&_mini {
+			 min-height: 143px;
+		}
+	}
+}

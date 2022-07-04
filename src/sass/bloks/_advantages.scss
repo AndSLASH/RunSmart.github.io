@@ -35,8 +35,20 @@
 		}
 	}
 	&__icon {
-		&_animated {
+		&_animated-one {
+			animation: cup 5s ease-in infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+		&_animated-two {
 			animation: heartbeat 5s ease infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+		&_animated-three {
+			animation: shoe 5s ease-out infinite;
 			&:hover {
 				animation-play-state: paused;
 			}

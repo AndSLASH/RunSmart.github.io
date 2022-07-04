@@ -1,3 +1,18 @@
+@keyframes cup {
+	from {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(10px);
+	}
+	75% {
+		transform: translateY(-10px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
 @keyframes heartbeat {
 	from {
 		transform: scale(1);
@@ -7,5 +22,23 @@
 	}
 	to {
 		transform: scale(1);
+	}
+}
+
+@keyframes shoe {
+	from {
+		transform: rotate(0);
+	}
+	25% {
+		transform:rotate(-25deg);
+	}
+	50% {
+		transform:rotate(0deg);
+	}
+	75% {
+		transform:rotate(25deg);
+	}
+	to {
+		transform: rotate(0deg);
 	}
 }
