@@ -19,7 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
@@ -30,6 +30,6 @@
     "animate.css": "^4.1.1",
     "animate.min.css": "^0.0.3",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^2.4.0"
   }
 }
